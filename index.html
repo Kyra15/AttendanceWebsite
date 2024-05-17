@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body> 
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>  
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Menu</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#instruct" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Instructions</a>
+        <a href="#student_list" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Student List</a>
+        <a href="#program" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Program</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="./images/njhs_logo.png" class="w3-circle w3-border w3-border-amber" style="border-width: 3px !important;"/>
+        <!--CV DOWNLOAD BUTTON FIX CODE LINK-->
+        <div class="w3-container w3-padding-16">
+          <!-- <a href="./njhsattendance_1_.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CODE AS A PDF</span>
+          </a> -->
+        </div>
+        <!--CONTACT SECTION-->
+            <div id="contact" class="side">
+              <h5 class="w3-border-bottom w3-border-amber w3-padding-large" style="border-width: 3px !important;">If you have any questions or something breaks, contact me!</h5>
+              <div class="" style="font-weight: 300;">
+                <p>Name: Kyra Movva</p>
+                <p>Email: pl251201@ahschool.com or kyra.movva@gmail.com</p>
+                <a class="w3-button w3-round-xxlarge w3-large w3-sand" href="https://replit.com/@Kyra15/NJHSAttendence" target="_blank"><b>Link to Code on Repl!</b></a> 
+              </div>
+            </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Home</a>
+          <a href="#program" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Program</a>
+          <a href="#student_list" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Student List</a>
+          <a href="#instruct" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Instructions</a>
+        </div>
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <h1>NJHS Automatic Attendance</h2>
+            <!-- <h2> Created by Kyra Movva </h3> -->
+            <p></p>
+          </div>
+          <div class="content-container w3-margin-top-2">
+          <!--ABOUT SECTION MAKE TWO SECTIONS, ONE FOR INPUT AND ONE FOR OUTPUT-->
+            <!--INPUT IS DRAG AND DROP FILE and button, OUTPUT IS TEXT PLUS OUTPUT FILE-->
+          <div id="instruct" class="w3-container w3-margin-top-10-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 2px !important;">INSTRUCTIONS</h2>
+            <div id="to_inst" class="w3-container">
+              <h4 class="w3-border-amber">To set up program (only do for first use):</h4>
+              <p class="w3-margin-top-2"> 
+                At the beginning of the year, you'll most likely get a list with every members' name. 
+                 Alphabetize that list, (look up a website for it if you need to) and copy it. It should be in a format like the photo below. 
+              </p>
+              <img src="./images/instruct1.png" alt="" class="center">
+              <p class="">
+                On this website, go to the "Program" section and look for the box that says "Student List." 
+                 Paste the list into that textbox.
+              </p>
+              <img src="./images/instruct2.png" alt="" class="center">
+            </div>
+            <div id="already_inst" class="w3-container w3-margin-top-10-percent">
+              <h4 class="w3-border-amber">If program is already set up:</h4>
+              <p class="w3-margin-top-2"> 
+                Once you create your google form for the attendance and link that to a spreadsheet, 
+                export the sheet by going to File -> Download -> Comma Seperated Values (.csv). 
+              </p>
+              <img src="./images/instructa1.png" alt="" class="center">
+              <p class=""> 
+                The csv file should have been saved to your device. 
+                Now, input the file into this website by going to the "Program" section and dragging and dropping 
+                (computer only) the file into this website where it says "Input File."
+              </p>
+              <img src="./images/instructa2.png" alt="" class="center">
+              <p class=""> 
+                Click the "Check Attendance" button and wait until it finishes processing.
+              </p>
+              <p class=""> 
+                If there are issues with the form, which will most likely come from typos or names not matching up, 
+                the names with errors will be outputted in the "Errors" box. Go back to the google sheet that your google form is connected to and fix the names with errors.
+                After you've fixed the errors, redownload the file and try the program again. Keep repeating this until the "Errors" box is empty.
+              </p>
+              <img src="./images/instructa3.png" alt="" class="center">
+              <p class=""> 
+                The names of people who came to the meeting but aren't members of NJHS will also be outputted if you need them :)
+              </p>
+              <p class=""> 
+                Once everything is good, click the "Download Updated Attendance" button. The new file should be saved to your computer. 
+                Go to the Google Sheet link called "NJHS Middleman." Go to File -> Import and drag and drop the updated attendance file into there.
+                Hit replace current sheet. Now, copy the entire second column. Go to your main attendance spreadsheet (the one on schoology!) and paste in the column. 
+                That's it!
+              </p>
+              <img src="./images/instructa4.png" alt="" class="center">
+          </div>
+
+          <!--INPUT-->
+          <div id="student_list" class="w3-container w3-margin-top-10-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">STUDENT LIST</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">Student List Input:</h3>
+              <div class="">
+                <h5>(Copy and paste names into here and click submit when done)</h5>
+                <form id="form_stud">
+                  <textarea name="stud" id="stud" style="text-align:left"></textarea>
+                  <p><input type="submit" value="Submit" id="submitBtn"></p>
+                </form>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>College diploma, College of management, Houston</h4>
+                <p>October 2008 - July 2013 </p>
+                <h4>Highschool diploma, XYZ Highschool, Houston</h4>
+                <p>October 2004 - July 2008 </p>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>I have excelent communication skill and confidence in front of an audience</li>
+                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I have a great experience with MS Office tools</li>
+                  <li>I am proficient in technical writing</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+            </div>
+
+          <!--FOOTER-->
+          <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+          <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+            <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+            <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+          <!-- End footer -->
+          </footer>
+
+          <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
